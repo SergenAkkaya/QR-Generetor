@@ -1,1 +1,41 @@
-<!doctype html><html lang="tr"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no"/><script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script><title>QR Code Generator</title><script src="/node_modules/jquery.qrcode/jquery.qrcode.min.js"></script><script defer="defer" src="main.min.js"></script><link href="main.min.css" rel="stylesheet"></head><body data-template="index"><div class="container"><div class="qr"><section class="qr-body"><div class="row"><div class="col-12"><span class="qr-body-header">QR Code Generator</span></div><div class="col-12"><div class="qr-body-sqrcode" id="qrcodeCanvas"></div></div><div class="col-12"><div class="qr-body-sqrcode-alt"><input class="qr-body-sqrcode-alt-input" placeholder="Paste an URL or enter text." id="text"></div></div><div class="col-12"><div class="qr-body-sqrcode-alt"><button class="generator">Generator</button></div></div></div></section></div></div></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <title>QR Code Generator</title>
+    <script src="/node_modules/jquery.qrcode/jquery.qrcode.min.js"></script>
+  <script defer src="main.min.js"></script><link href="main.min.css" rel="stylesheet"></head>
+  <body data-template="index">
+    <div class="container">
+      <div class="qr">
+        <section class="qr-body">
+          <div class="row">
+            <div class="col-12">
+              <span class="qr-body-header">QR Code Generator</span>
+            </div>
+            <div class="col-12">
+              <div class="qr-body-sqrcode" id="qrcodeCanvas">
+
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="qr-body-sqrcode-alt">
+              <input type="text"  class="qr-body-sqrcode-alt-input" placeholder="Paste an URL or enter text." id="text">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="qr-body-sqrcode-alt">
+              <button class="generator">Generator</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
